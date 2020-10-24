@@ -79,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1721F2EE25445D240042CC94 /* App Setup */ = {
+			isa = PBXGroup;
+			children = (
+				176C96392540C2F20025AE64 /* AppDelegate.swift */,
+				176C963B2540C2F20025AE64 /* SceneDelegate.swift */,
+			);
+			path = "App Setup";
+			sourceTree = "<group>";
+		};
 		176C962D2540C2F20025AE64 = {
 			isa = PBXGroup;
 			children = (
@@ -101,14 +110,13 @@
 		176C96382540C2F20025AE64 /* SimpleSingleFetch */ = {
 			isa = PBXGroup;
 			children = (
+				1721F2EE25445D240042CC94 /* App Setup */,
 				176C96762540CEF90025AE64 /* Extensions */,
 				176C96732540CE690025AE64 /* View Modifiers */,
 				176C96722540C9530025AE64 /* Views */,
 				176C966D2540C3C40025AE64 /* Data Models */,
 				176C966A2540C3130025AE64 /* Worker */,
 				176C96692540C30C0025AE64 /* ViewModel */,
-				176C96392540C2F20025AE64 /* AppDelegate.swift */,
-				176C963B2540C2F20025AE64 /* SceneDelegate.swift */,
 				176C963F2540C2F40025AE64 /* Assets.xcassets */,
 				176C96442540C2F40025AE64 /* LaunchScreen.storyboard */,
 				176C96472540C2F40025AE64 /* Info.plist */,

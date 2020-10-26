@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1721F30D254509BF0042CC94 /* SimpleSingleFetchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1721F30C254509BF0042CC94 /* SimpleSingleFetchUITests.swift */; };
 		176C963A2540C2F20025AE64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176C96392540C2F20025AE64 /* AppDelegate.swift */; };
 		176C963C2540C2F20025AE64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176C963B2540C2F20025AE64 /* SceneDelegate.swift */; };
 		176C963E2540C2F20025AE64 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176C963D2540C2F20025AE64 /* UserView.swift */; };
@@ -27,6 +28,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1721F30F254509BF0042CC94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 176C962E2540C2F20025AE64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 176C96352540C2F20025AE64;
+			remoteInfo = SimpleSingleFetch;
+		};
 		176C964D2540C2F50025AE64 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 176C962E2540C2F20025AE64 /* Project object */;
@@ -37,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1721F30A254509BF0042CC94 /* SimpleSingleFetchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleSingleFetchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1721F30C254509BF0042CC94 /* SimpleSingleFetchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSingleFetchUITests.swift; sourceTree = "<group>"; };
+		1721F30E254509BF0042CC94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		176C96362540C2F20025AE64 /* SimpleSingleFetch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleSingleFetch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		176C96392540C2F20025AE64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		176C963B2540C2F20025AE64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,7 +58,6 @@
 		176C96472540C2F40025AE64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		176C964C2540C2F50025AE64 /* SimpleSingleFetchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleSingleFetchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		176C96522540C2F50025AE64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		176C965D2540C2F50025AE64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		176C966B2540C3430025AE64 /* UserWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserWorker.swift; sourceTree = "<group>"; };
 		176C966E2540C3D50025AE64 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		176C96702540C73A0025AE64 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
@@ -62,6 +72,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1721F307254509BF0042CC94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		176C96332540C2F20025AE64 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -88,12 +105,21 @@
 			path = "App Setup";
 			sourceTree = "<group>";
 		};
+		1721F30B254509BF0042CC94 /* SimpleSingleFetchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1721F30C254509BF0042CC94 /* SimpleSingleFetchUITests.swift */,
+				1721F30E254509BF0042CC94 /* Info.plist */,
+			);
+			path = SimpleSingleFetchUITests;
+			sourceTree = "<group>";
+		};
 		176C962D2540C2F20025AE64 = {
 			isa = PBXGroup;
 			children = (
 				176C96382540C2F20025AE64 /* SimpleSingleFetch */,
 				176C964F2540C2F50025AE64 /* SimpleSingleFetchTests */,
-				176C965A2540C2F50025AE64 /* SimpleSingleFetchUITests */,
+				1721F30B254509BF0042CC94 /* SimpleSingleFetchUITests */,
 				176C96372540C2F20025AE64 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,6 +129,7 @@
 			children = (
 				176C96362540C2F20025AE64 /* SimpleSingleFetch.app */,
 				176C964C2540C2F50025AE64 /* SimpleSingleFetchTests.xctest */,
+				1721F30A254509BF0042CC94 /* SimpleSingleFetchUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,16 +138,16 @@
 			isa = PBXGroup;
 			children = (
 				1721F2EE25445D240042CC94 /* App Setup */,
-				176C96762540CEF90025AE64 /* Extensions */,
-				176C96732540CE690025AE64 /* View Modifiers */,
-				176C96722540C9530025AE64 /* Views */,
-				176C966D2540C3C40025AE64 /* Data Models */,
-				176C966A2540C3130025AE64 /* Worker */,
-				176C96692540C30C0025AE64 /* ViewModel */,
 				176C963F2540C2F40025AE64 /* Assets.xcassets */,
-				176C96442540C2F40025AE64 /* LaunchScreen.storyboard */,
+				176C966D2540C3C40025AE64 /* Data Models */,
+				176C96762540CEF90025AE64 /* Extensions */,
 				176C96472540C2F40025AE64 /* Info.plist */,
+				176C96442540C2F40025AE64 /* LaunchScreen.storyboard */,
 				176C96412540C2F40025AE64 /* Preview Content */,
+				176C96732540CE690025AE64 /* View Modifiers */,
+				176C96692540C30C0025AE64 /* ViewModel */,
+				176C96722540C9530025AE64 /* Views */,
+				176C966A2540C3130025AE64 /* Worker */,
 			);
 			path = SimpleSingleFetch;
 			sourceTree = "<group>";
@@ -144,14 +171,6 @@
 				176C96522540C2F50025AE64 /* Info.plist */,
 			);
 			path = SimpleSingleFetchTests;
-			sourceTree = "<group>";
-		};
-		176C965A2540C2F50025AE64 /* SimpleSingleFetchUITests */ = {
-			isa = PBXGroup;
-			children = (
-				176C965D2540C2F50025AE64 /* Info.plist */,
-			);
-			path = SimpleSingleFetchUITests;
 			sourceTree = "<group>";
 		};
 		176C96692540C30C0025AE64 /* ViewModel */ = {
@@ -246,6 +265,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1721F309254509BF0042CC94 /* SimpleSingleFetchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1721F311254509BF0042CC94 /* Build configuration list for PBXNativeTarget "SimpleSingleFetchUITests" */;
+			buildPhases = (
+				1721F306254509BF0042CC94 /* Sources */,
+				1721F307254509BF0042CC94 /* Frameworks */,
+				1721F308254509BF0042CC94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1721F310254509BF0042CC94 /* PBXTargetDependency */,
+			);
+			name = SimpleSingleFetchUITests;
+			productName = SimpleSingleFetchUITests;
+			productReference = 1721F30A254509BF0042CC94 /* SimpleSingleFetchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		176C96352540C2F20025AE64 /* SimpleSingleFetch */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 176C96602540C2F50025AE64 /* Build configuration list for PBXNativeTarget "SimpleSingleFetch" */;
@@ -290,6 +327,10 @@
 				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
+					1721F309254509BF0042CC94 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 176C96352540C2F20025AE64;
+					};
 					176C96352540C2F20025AE64 = {
 						CreatedOnToolsVersion = 12.0;
 					};
@@ -314,11 +355,19 @@
 			targets = (
 				176C96352540C2F20025AE64 /* SimpleSingleFetch */,
 				176C964B2540C2F50025AE64 /* SimpleSingleFetchTests */,
+				1721F309254509BF0042CC94 /* SimpleSingleFetchUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1721F308254509BF0042CC94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		176C96342540C2F20025AE64 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -339,6 +388,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1721F306254509BF0042CC94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1721F30D254509BF0042CC94 /* SimpleSingleFetchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		176C96322540C2F20025AE64 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -370,6 +427,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1721F310254509BF0042CC94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 176C96352540C2F20025AE64 /* SimpleSingleFetch */;
+			targetProxy = 1721F30F254509BF0042CC94 /* PBXContainerItemProxy */;
+		};
 		176C964E2540C2F50025AE64 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 176C96352540C2F20025AE64 /* SimpleSingleFetch */;
@@ -389,6 +451,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1721F312254509BF0042CC94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7947CFF545;
+				INFOPLIST_FILE = SimpleSingleFetchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.scmotech.SimpleSingleFetchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SimpleSingleFetch;
+			};
+			name = Debug;
+		};
+		1721F313254509BF0042CC94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7947CFF545;
+				INFOPLIST_FILE = SimpleSingleFetchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.scmotech.SimpleSingleFetchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SimpleSingleFetch;
+			};
+			name = Release;
+		};
 		176C965E2540C2F50025AE64 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -594,6 +694,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1721F311254509BF0042CC94 /* Build configuration list for PBXNativeTarget "SimpleSingleFetchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1721F312254509BF0042CC94 /* Debug */,
+				1721F313254509BF0042CC94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		176C96312540C2F20025AE64 /* Build configuration list for PBXProject "SimpleSingleFetch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -50,6 +50,7 @@ struct UserWorker: UserFetcher {
         request.httpMethod = httpMethod.rawValue
         
         return session.dataTaskPublisher(for: request)
+            .retry(1)
             .receive(on: sessionProcessingQueue)
             .tryMap { data, response in
                 

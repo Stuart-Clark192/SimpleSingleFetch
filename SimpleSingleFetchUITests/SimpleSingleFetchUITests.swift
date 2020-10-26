@@ -27,6 +27,7 @@ class SimpleSingleFetchUITests: XCTestCase {
     func testExample() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
+        app.launchArguments = ["UITestMode"]
         app.launch()
 
         let expectedValue = XCUIApplication().tables/*@START_MENU_TOKEN@*/.staticTexts["Leanne Graham"]/*[[".cells[\"Leanne Graham\"].staticTexts[\"Leanne Graham\"]",".staticTexts[\"Leanne Graham\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/

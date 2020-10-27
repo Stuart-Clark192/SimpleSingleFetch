@@ -31,4 +31,14 @@ class UserWorkerTests: XCTestCase {
         wait(for: validTest.expectations, timeout: 10)
         validTest.cancellable?.cancel()
     }
+    
+    func testFetchUsersWithInValidResponseReturnsError() throws {
+        URLProtocolMock.response = MockResponses.urlNotFoundResponse
+        
+        let publisher = sut.fetchUsers(url: url, httpMethod: .get, using: session)
+        
+        let invalidTest = evalInvalidResponse(publisher: publisher, description: #function)
+        wait(for: invalidTest.expectations, timeout: 10)
+        invalidTest.cancellable?.cancel()
+    }
 }

@@ -147,13 +147,13 @@
 		176C96382540C2F20025AE64 /* SimpleSingleFetch */ = {
 			isa = PBXGroup;
 			children = (
-				1721F316254772950042CC94 /* Local test session */,
 				1721F2EE25445D240042CC94 /* App Setup */,
 				176C963F2540C2F40025AE64 /* Assets.xcassets */,
 				176C966D2540C3C40025AE64 /* Data Models */,
 				176C96762540CEF90025AE64 /* Extensions */,
 				176C96472540C2F40025AE64 /* Info.plist */,
 				176C96442540C2F40025AE64 /* LaunchScreen.storyboard */,
+				1721F316254772950042CC94 /* Local test session */,
 				176C96412540C2F40025AE64 /* Preview Content */,
 				176C96732540CE690025AE64 /* View Modifiers */,
 				176C96692540C30C0025AE64 /* ViewModel */,
@@ -174,10 +174,10 @@
 		176C964F2540C2F50025AE64 /* SimpleSingleFetchTests */ = {
 			isa = PBXGroup;
 			children = (
-				1795C62F254323DD0093C945 /* ViewModel Tests */,
 				178F688F2541F86600018790 /* Extensions */,
-				178F688C2541ED8600018790 /* Worker Tests */,
 				176C96522540C2F50025AE64 /* Info.plist */,
+				1795C62F254323DD0093C945 /* ViewModel Tests */,
+				178F688C2541ED8600018790 /* Worker Tests */,
 			);
 			path = SimpleSingleFetchTests;
 			sourceTree = "<group>";

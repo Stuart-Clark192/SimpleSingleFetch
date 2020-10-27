@@ -17,16 +17,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     private var isRunningUITests: Bool {
-        return ProcessInfo.processInfo.arguments.contains("testMode")
+        return ProcessInfo.processInfo.arguments.contains("UITestMode")
     }
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
-        let viewModel = UserViewModel()
-        let userView = UserView(viewModel: viewModel)
+        let session = isRunningUITests || isRunningUnitTests
+            ? URLTestSession.testSession()
+            : URLSession.shared
         
-        let env = ProcessInfo.processInfo.environment
-        print("ENV KEYS: \(env.keys)")
+        if isRunningUITests {
+            URLProtocolMock.response = MockResponses.validResponse
+        }
+        
+        let viewModel = UserViewModel(using: session)
+        let userView = UserView(viewModel: viewModel)
         
         if let windowScene = scene as? UIWindowScene {
             

@@ -26,8 +26,13 @@ class UserViewModel: ObservableObject {
     
     private var worker = UserWorker()
     private var cancellationToken: AnyCancellable?
+    private var session: URLSession!
     
-    func loadUsers(using session: URLSession = URLSession.shared) {
+    init(using session: URLSession) {
+        self.session = session
+    }
+    
+    func loadUsers() {
         guard let url = URL(string: "https://jsonplaceholder.typicode.com/users") else { return }
 
         viewData.viewState = .loading

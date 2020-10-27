@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1721F30D254509BF0042CC94 /* SimpleSingleFetchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1721F30C254509BF0042CC94 /* SimpleSingleFetchUITests.swift */; };
+		1721F318254772C10042CC94 /* URLTestSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1721F317254772C10042CC94 /* URLTestSession.swift */; };
+		1721F319254773240042CC94 /* URLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178F68872541E36100018790 /* URLProtocolMock.swift */; };
+		1721F31C254812420042CC94 /* MockResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1795C62B254307F90093C945 /* MockResponses.swift */; };
 		176C963A2540C2F20025AE64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176C96392540C2F20025AE64 /* AppDelegate.swift */; };
 		176C963C2540C2F20025AE64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176C963B2540C2F20025AE64 /* SceneDelegate.swift */; };
 		176C963E2540C2F20025AE64 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176C963D2540C2F20025AE64 /* UserView.swift */; };
@@ -19,10 +22,7 @@
 		176C96712540C73A0025AE64 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176C96702540C73A0025AE64 /* UserViewModel.swift */; };
 		176C96752540CEAE0025AE64 /* ShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176C96742540CEAE0025AE64 /* ShowView.swift */; };
 		176C96782540CF0C0025AE64 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176C96772540CF0C0025AE64 /* View+Extensions.swift */; };
-		178F68882541E36100018790 /* URLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178F68872541E36100018790 /* URLProtocolMock.swift */; };
-		178F688B2541ED4F00018790 /* UserTestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178F688A2541ED4F00018790 /* UserTestData.swift */; };
 		178F688E2541ED9C00018790 /* UserWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178F688D2541ED9C00018790 /* UserWorkerTests.swift */; };
-		1795C62C254307F90093C945 /* MockResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1795C62B254307F90093C945 /* MockResponses.swift */; };
 		1795C62E25430DDD0093C945 /* XCTestCase+PublisherValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1795C62D25430DDD0093C945 /* XCTestCase+PublisherValidation.swift */; };
 		1795C631254324040093C945 /* UserViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1795C630254324040093C945 /* UserViewModelTests.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +48,7 @@
 		1721F30A254509BF0042CC94 /* SimpleSingleFetchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleSingleFetchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1721F30C254509BF0042CC94 /* SimpleSingleFetchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSingleFetchUITests.swift; sourceTree = "<group>"; };
 		1721F30E254509BF0042CC94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1721F317254772C10042CC94 /* URLTestSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLTestSession.swift; sourceTree = "<group>"; };
 		176C96362540C2F20025AE64 /* SimpleSingleFetch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleSingleFetch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		176C96392540C2F20025AE64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		176C963B2540C2F20025AE64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,7 +65,6 @@
 		176C96742540CEAE0025AE64 /* ShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowView.swift; sourceTree = "<group>"; };
 		176C96772540CF0C0025AE64 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		178F68872541E36100018790 /* URLProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolMock.swift; sourceTree = "<group>"; };
-		178F688A2541ED4F00018790 /* UserTestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTestData.swift; sourceTree = "<group>"; };
 		178F688D2541ED9C00018790 /* UserWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserWorkerTests.swift; sourceTree = "<group>"; };
 		1795C62B254307F90093C945 /* MockResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockResponses.swift; sourceTree = "<group>"; };
 		1795C62D25430DDD0093C945 /* XCTestCase+PublisherValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+PublisherValidation.swift"; sourceTree = "<group>"; };
@@ -114,6 +114,16 @@
 			path = SimpleSingleFetchUITests;
 			sourceTree = "<group>";
 		};
+		1721F316254772950042CC94 /* Local test session */ = {
+			isa = PBXGroup;
+			children = (
+				178F68892541ED3400018790 /* Data Stubs */,
+				1721F317254772C10042CC94 /* URLTestSession.swift */,
+				178F68872541E36100018790 /* URLProtocolMock.swift */,
+			);
+			path = "Local test session";
+			sourceTree = "<group>";
+		};
 		176C962D2540C2F20025AE64 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +147,7 @@
 		176C96382540C2F20025AE64 /* SimpleSingleFetch */ = {
 			isa = PBXGroup;
 			children = (
+				1721F316254772950042CC94 /* Local test session */,
 				1721F2EE25445D240042CC94 /* App Setup */,
 				176C963F2540C2F40025AE64 /* Assets.xcassets */,
 				176C966D2540C3C40025AE64 /* Data Models */,
@@ -166,7 +177,6 @@
 				1795C62F254323DD0093C945 /* ViewModel Tests */,
 				178F688F2541F86600018790 /* Extensions */,
 				178F688C2541ED8600018790 /* Worker Tests */,
-				178F68892541ED3400018790 /* Data Stubs */,
 				178F68862541E34900018790 /* MockingFiles */,
 				176C96522540C2F50025AE64 /* Info.plist */,
 			);
@@ -224,7 +234,6 @@
 		178F68862541E34900018790 /* MockingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				178F68872541E36100018790 /* URLProtocolMock.swift */,
 			);
 			path = MockingFiles;
 			sourceTree = "<group>";
@@ -232,7 +241,6 @@
 		178F68892541ED3400018790 /* Data Stubs */ = {
 			isa = PBXGroup;
 			children = (
-				178F688A2541ED4F00018790 /* UserTestData.swift */,
 				1795C62B254307F90093C945 /* MockResponses.swift */,
 			);
 			path = "Data Stubs";
@@ -401,10 +409,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				176C966C2540C3430025AE64 /* UserWorker.swift in Sources */,
+				1721F31C254812420042CC94 /* MockResponses.swift in Sources */,
 				176C96712540C73A0025AE64 /* UserViewModel.swift in Sources */,
 				176C963A2540C2F20025AE64 /* AppDelegate.swift in Sources */,
 				176C96752540CEAE0025AE64 /* ShowView.swift in Sources */,
 				176C963C2540C2F20025AE64 /* SceneDelegate.swift in Sources */,
+				1721F319254773240042CC94 /* URLProtocolMock.swift in Sources */,
+				1721F318254772C10042CC94 /* URLTestSession.swift in Sources */,
 				176C966F2540C3D50025AE64 /* User.swift in Sources */,
 				176C96782540CF0C0025AE64 /* View+Extensions.swift in Sources */,
 				176C963E2540C2F20025AE64 /* UserView.swift in Sources */,
@@ -418,9 +429,6 @@
 				1795C62E25430DDD0093C945 /* XCTestCase+PublisherValidation.swift in Sources */,
 				1795C631254324040093C945 /* UserViewModelTests.swift in Sources */,
 				178F688E2541ED9C00018790 /* UserWorkerTests.swift in Sources */,
-				178F68882541E36100018790 /* URLProtocolMock.swift in Sources */,
-				1795C62C254307F90093C945 /* MockResponses.swift in Sources */,
-				178F688B2541ED4F00018790 /* UserTestData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,29 +12,21 @@ import Combine
 class UserWorkerTests: XCTestCase {
     
     private var sut = UserWorker()
-    private var session: URLSession!
+    private var session = URLTestSession.testSession()
+    private var url: URL!
     
     override func setUpWithError() throws {
-        let url = try XCTUnwrap(URL(string: "https://jsonplaceholder.typicode.com/users"))
-        let testData = UserTestData.usersDataJSON.data(using: .utf8)!
-        
-        URLProtocolMock.testURLs = [url: testData]
-        
-        let config = URLSessionConfiguration.ephemeral
-        config.protocolClasses = [URLProtocolMock.self]
-        session = URLSession(configuration: config)
-    
+        url = try XCTUnwrap(URL(string: "https://jsonplaceholder.typicode.com/users"))
     }
     
     override func tearDownWithError() throws {
-        session = nil
+        
     }
     
     func testFetchUsersWithValidResponseReturnsData() throws {
         URLProtocolMock.response = MockResponses.validResponse
-        let url = try XCTUnwrap(URL(string: "https://jsonplaceholder.typicode.com/users"))
         let publisher = sut.fetchUsers(url: url, httpMethod: .get, using: session)
-    
+        
         let validTest = evalValidResponse(publisher: publisher, description: #function)
         wait(for: validTest.expectations, timeout: 10)
         validTest.cancellable?.cancel()

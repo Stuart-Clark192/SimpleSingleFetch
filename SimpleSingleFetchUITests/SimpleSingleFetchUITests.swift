@@ -26,21 +26,13 @@ class SimpleSingleFetchUITests: XCTestCase {
 
     func testExample() throws {
         // UI tests must launch the application that they test.
+        
         let app = XCUIApplication()
         app.launchArguments = ["UITestMode"]
         app.launch()
 
-        let expectedValue = XCUIApplication().tables/*@START_MENU_TOKEN@*/.staticTexts["Leanne Graham"]/*[[".cells[\"Leanne Graham\"].staticTexts[\"Leanne Graham\"]",".staticTexts[\"Leanne Graham\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let expectedValue = XCUIApplication().tables.staticTexts["Leanne Graham"]
         _ = expectedValue.waitForExistence(timeout: 5)
         XCTAssertTrue(expectedValue.exists)
-    }
-
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
     }
 }

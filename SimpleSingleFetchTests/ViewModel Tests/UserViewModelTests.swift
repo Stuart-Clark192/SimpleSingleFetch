@@ -12,24 +12,16 @@ import Foundation
 
 class UserViewModelTests: XCTestCase {
     
-    private var sut = UserViewModel()
-    private var session: URLSession!
+    private var sut = UserViewModel(using: URLTestSession.testSession())
+    private var url: URL!
     private var cancellationToken: AnyCancellable?
     private var stateChanges = [ViewState]()
     
     override func setUpWithError() throws {
-        let url = try XCTUnwrap(URL(string: "https://jsonplaceholder.typicode.com/users"))
-        let testData = UserTestData.usersDataJSON.data(using: .utf8)!
-        
-        URLProtocolMock.testURLs = [url: testData]
-        
-        let config = URLSessionConfiguration.ephemeral
-        config.protocolClasses = [URLProtocolMock.self]
-        session = URLSession(configuration: config)
-        
+        url = try XCTUnwrap(URL(string: "https://jsonplaceholder.typicode.com/users"))
     }
+    
     override func tearDownWithError() throws {
-        session = nil
     }
     
     func testLoadUsersSetsUsersAndViewStateToData() throws {
@@ -47,7 +39,7 @@ class UserViewModelTests: XCTestCase {
                 }
             }
         
-        sut.loadUsers(using: session)
+        sut.loadUsers()
         
         waitForExpectations(timeout: 15, handler: nil)
         
@@ -73,7 +65,7 @@ class UserViewModelTests: XCTestCase {
                 }
             }
         
-        sut.loadUsers(using: session)
+        sut.loadUsers()
         
         waitForExpectations(timeout: 15, handler: nil)
         

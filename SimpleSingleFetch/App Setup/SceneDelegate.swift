@@ -20,13 +20,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         return ProcessInfo.processInfo.arguments.contains("UITestMode")
     }
     
+    private var runLocalTestMode: Bool {
+        return ProcessInfo.processInfo.arguments.contains("LocalTestMode")
+    }
+    
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
-        let session = isRunningUITests || isRunningUnitTests
+        let session = isRunningUITests || isRunningUnitTests || runLocalTestMode
             ? URLTestSession.testSession()
             : URLSession.shared
         
-        if isRunningUITests {
+        if isRunningUITests || runLocalTestMode {
             URLProtocolMock.response = MockResponses.validResponse
         }
         

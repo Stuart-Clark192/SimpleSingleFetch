@@ -177,7 +177,6 @@
 				1795C62F254323DD0093C945 /* ViewModel Tests */,
 				178F688F2541F86600018790 /* Extensions */,
 				178F688C2541ED8600018790 /* Worker Tests */,
-				178F68862541E34900018790 /* MockingFiles */,
 				176C96522540C2F50025AE64 /* Info.plist */,
 			);
 			path = SimpleSingleFetchTests;
@@ -229,13 +228,6 @@
 				176C96772540CF0C0025AE64 /* View+Extensions.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		178F68862541E34900018790 /* MockingFiles */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MockingFiles;
 			sourceTree = "<group>";
 		};
 		178F68892541ED3400018790 /* Data Stubs */ = {

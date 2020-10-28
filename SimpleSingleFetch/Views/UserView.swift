@@ -13,17 +13,21 @@ struct UserView: View {
     
     var body: some View {
         Group {
-            Text("Loading").showView(isVisible: viewModel.viewData.viewState == ViewState.loading)
             
-            List {
-                ForEach(viewModel.viewData.users) { user in
-                    Text(user.name)
+            switch viewModel.viewData.viewState {
+            case .loading:
+                Text("Loading")
+            case .data:
+                List {
+                    ForEach(viewModel.viewData.users) { user in
+                        Text(user.name)
+                    }
                 }
-            }.showView(isVisible: viewModel.viewData.viewState == ViewState.data)
-            
-            Text("No data to display").showView(isVisible: viewModel.viewData.viewState == ViewState.noData)
-            
-            Text("Data error").showView(isVisible: viewModel.viewData.viewState == ViewState.error)
+            case .noData:
+                Text("No data to display")
+            case .error:
+                Text("Data error")
+            }
         }
         .onAppear {
             viewModel.loadUsers()

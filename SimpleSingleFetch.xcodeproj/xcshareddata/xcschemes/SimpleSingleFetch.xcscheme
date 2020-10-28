@@ -43,7 +43,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1721F2FB2545097A0042CC94"
+               BlueprintIdentifier = "1721F309254509BF0042CC94"
                BuildableName = "SimpleSingleFetchUITests.xctest"
                BlueprintName = "SimpleSingleFetchUITests"
                ReferencedContainer = "container:SimpleSingleFetch.xcodeproj">

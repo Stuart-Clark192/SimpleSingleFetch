@@ -22,6 +22,8 @@
 		176C96712540C73A0025AE64 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176C96702540C73A0025AE64 /* UserViewModel.swift */; };
 		176C96752540CEAE0025AE64 /* ShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176C96742540CEAE0025AE64 /* ShowView.swift */; };
 		176C96782540CF0C0025AE64 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176C96772540CF0C0025AE64 /* View+Extensions.swift */; };
+		176D701E2549DB150069F331 /* AppSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176D701D2549DB150069F331 /* AppSession.swift */; };
+		176D70202549DB430069F331 /* UIApplicationDelegate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176D701F2549DB430069F331 /* UIApplicationDelegate+Extensions.swift */; };
 		178F688E2541ED9C00018790 /* UserWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178F688D2541ED9C00018790 /* UserWorkerTests.swift */; };
 		1795C62E25430DDD0093C945 /* XCTestCase+PublisherValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1795C62D25430DDD0093C945 /* XCTestCase+PublisherValidation.swift */; };
 		1795C631254324040093C945 /* UserViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1795C630254324040093C945 /* UserViewModelTests.swift */; };
@@ -64,6 +66,8 @@
 		176C96702540C73A0025AE64 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		176C96742540CEAE0025AE64 /* ShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowView.swift; sourceTree = "<group>"; };
 		176C96772540CF0C0025AE64 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		176D701D2549DB150069F331 /* AppSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSession.swift; sourceTree = "<group>"; };
+		176D701F2549DB430069F331 /* UIApplicationDelegate+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplicationDelegate+Extensions.swift"; sourceTree = "<group>"; };
 		178F68872541E36100018790 /* URLProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolMock.swift; sourceTree = "<group>"; };
 		178F688D2541ED9C00018790 /* UserWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserWorkerTests.swift; sourceTree = "<group>"; };
 		1795C62B254307F90093C945 /* MockResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockResponses.swift; sourceTree = "<group>"; };
@@ -101,6 +105,7 @@
 			children = (
 				176C96392540C2F20025AE64 /* AppDelegate.swift */,
 				176C963B2540C2F20025AE64 /* SceneDelegate.swift */,
+				176D701D2549DB150069F331 /* AppSession.swift */,
 			);
 			path = "App Setup";
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				176C96772540CF0C0025AE64 /* View+Extensions.swift */,
+				176D701F2549DB430069F331 /* UIApplicationDelegate+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -400,8 +406,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				176D701E2549DB150069F331 /* AppSession.swift in Sources */,
 				176C966C2540C3430025AE64 /* UserWorker.swift in Sources */,
 				1721F31C254812420042CC94 /* MockResponses.swift in Sources */,
+				176D70202549DB430069F331 /* UIApplicationDelegate+Extensions.swift in Sources */,
 				176C96712540C73A0025AE64 /* UserViewModel.swift in Sources */,
 				176C963A2540C2F20025AE64 /* AppDelegate.swift in Sources */,
 				176C96752540CEAE0025AE64 /* ShowView.swift in Sources */,

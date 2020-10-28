@@ -28,7 +28,7 @@ class UserViewModel: ObservableObject {
     private var cancellationToken: AnyCancellable?
     private var session: URLSession!
     
-    init(using session: URLSession) {
+    init(using session: URLSession = AppSession.sharedInstance.session) {
         self.session = session
     }
     

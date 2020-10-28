@@ -38,7 +38,7 @@ struct UserView: View {
 struct UserView_Previews: PreviewProvider {
     static var previews: some View {
         
-        let viewModel = UserViewModel(using: URLTestSession.testSession())
+        let viewModel = UserViewModel()
         return UserView(viewModel: viewModel)
     }
 }

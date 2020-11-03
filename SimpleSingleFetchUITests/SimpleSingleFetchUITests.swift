@@ -25,8 +25,8 @@ class SimpleSingleFetchUITests: XCTestCase {
         app.launchArguments = ["UITestMode"]
         app.launch()
 
-        let expectedValue = XCUIApplication().tables.staticTexts["Leanne Graham"]
-        _ = expectedValue.waitForExistence(timeout: 5)
-        XCTAssertTrue(expectedValue.exists)
+        let expectedNameValue = XCUIApplication().tables.staticTexts["Name: Leanne Graham"]
+        _ = expectedNameValue.waitForExistence(timeout: 5)
+        XCTAssertTrue(expectedNameValue.exists)
     }
 }

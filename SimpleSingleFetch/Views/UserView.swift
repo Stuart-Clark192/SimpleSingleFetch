@@ -20,7 +20,7 @@ struct UserView: View {
             case .data:
                 List {
                     ForEach(viewModel.viewData.users) { user in
-                        Text(user.name)
+                        UserItem(user: user)
                     }
                 }
             case .noData:
